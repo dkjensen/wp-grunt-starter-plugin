@@ -1,0 +1,39 @@
+{
+    "name": "dkjensen/hsids-training",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "1.6.0",
+        "tplaner/when": "^2.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.0.5"
+    },
+    "authors": [
+        {
+            "name": "David Jensen",
+            "email": "david@dkjensen.com"
+        }
+    ],
+    "scripts": {
+        "test": [
+          "phpunit"
+        ],
+        "phpcs": [
+          "phpcs -s -p"
+        ],
+        "phpcs-pre-commit": [
+          "phpcs -s -p -n"
+        ],
+        "phpcbf": [
+          "phpcbf -p"
+        ]
+    },
+    "extra": {
+        "scripts-description": {
+          "test": "Run unit tests",
+          "phpcs": "Analyze code against the WordPress coding standards with PHP_CodeSniffer",
+          "phpcbf": "Fix coding standards warnings/errors automatically with PHP Code Beautifier"
+        }
+    }
+}
