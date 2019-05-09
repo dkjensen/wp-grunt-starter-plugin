@@ -5,10 +5,11 @@
 `composer install`  
 `npm install`
 
-**Search replace:**
+**Search replace (case-sensitive):**
 
 WP Grunt Starter Plugin  
 WP_Grunt_Starter_Plugin  
+WP_GRUNT_STARTER_PLUGIN  
 wp-grunt-starter-plugin
 
 **Rename:**
