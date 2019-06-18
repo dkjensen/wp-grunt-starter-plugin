@@ -1,10 +1,8 @@
 {
-    "name": "dkjensen/hsids-training",
+    "name": "dkjensen/wp-grunt-starter-plugin",
     "type": "wordpress-plugin",
     "require": {
-        "composer/installers": "1.6.0",
-        "tplaner/when": "^2.1",
-        "guzzlehttp/guzzle": "^6.3"
+        "composer/installers": "1.6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "8.0.5"

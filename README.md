@@ -10,7 +10,7 @@
 WP Grunt Starter Plugin  
 WP_Grunt_Starter_Plugin  
 WP_GRUNT_STARTER_PLUGIN  
-wp-grunt-starter-plugin
+wp-grunt-starter-plugin  
 wp_grunt_starter_plugin
 
 **Rename:**
