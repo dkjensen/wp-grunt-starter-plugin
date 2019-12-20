@@ -1,0 +1,16 @@
+#pipe-careers-map {
+    max-height: 75vh;
+}
+
+.slick-disabled {
+    display: none !important;
+}
+
+.slick-slider[data-controls="false"] .slick-buttons {
+    display: none !important;
+}
+
+.slick-slide[aria-hidden="true"] {
+    opacity: 0;
+    visibility: hidden;
+}
