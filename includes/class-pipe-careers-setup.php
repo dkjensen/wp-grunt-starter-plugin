@@ -31,6 +31,36 @@ class Pipe_Careers_Setup {
      * @return void
      */
     function post_types() {
+        register_post_type( 'help-article', array(
+            'labels'             => array(
+                'name'               => _x( 'Help Articles', 'post type general name', 'pipe-careers' ),
+                'singular_name'      => _x( 'Help Article', 'post type singular name', 'pipe-careers' ),
+                'menu_name'          => _x( 'Help Articles', 'admin menu', 'pipe-careers' ),
+                'name_admin_bar'     => _x( 'Help Article', 'add new on admin bar', 'pipe-careers' ),
+                'add_new'            => _x( 'Add New', 'help article', 'pipe-careers' ),
+                'add_new_item'       => __( 'Add New Help Article', 'pipe-careers' ),
+                'new_item'           => __( 'New Help Article', 'pipe-careers' ),
+                'edit_item'          => __( 'Edit Help Article', 'pipe-careers' ),
+                'view_item'          => __( 'View Help Article', 'pipe-careers' ),
+                'all_items'          => __( 'All Help Articles', 'pipe-careers' ),
+                'search_items'       => __( 'Search Help Articles', 'pipe-careers' ),
+                'parent_item_colon'  => __( 'Parent Help Articles:', 'pipe-careers' ),
+                'not_found'          => __( 'No help articles found.', 'pipe-careers' ),
+                'not_found_in_trash' => __( 'No help articles found in Trash.', 'pipe-careers' )
+            ),
+            'public'             => true,
+            'publicly_queryable' => true,
+            'show_ui'            => true,
+            'show_in_menu'       => true,
+            'query_var'          => true,
+            'capability_type'    => 'post',
+            'has_archive'        => 'help',
+            'menu_position'      => null,
+            'menu_icon'          => 'dashicons-sos',
+            'rewrite'            => array( 'slug' => 'help' ),
+            'supports'           => array( 'title', 'editor', 'thumbnail' )
+        ) );
+
         register_post_type( 'landingpage', array(
             'labels'             => array(
                 'name'               => _x( 'Landing Pages', 'post type general name', 'pipe-careers' ),

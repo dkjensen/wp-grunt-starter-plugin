@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 
 		checktextdomain: {
 			options:{
-				text_domain: 'wp-grunt-starter-plugin',
+				text_domain: 'pipe-careers',
 				keywords: [
 					'__:1,2d',
 					'_e:1,2d',

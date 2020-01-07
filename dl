@@ -1,0 +1,68 @@
+[1mdiff --git a/Gruntfile.js b/Gruntfile.js[m
+[1mindex 75c5447..cbaeec4 100644[m
+[1m--- a/Gruntfile.js[m
+[1m+++ b/Gruntfile.js[m
+[36m@@ -86,7 +86,7 @@[m [mmodule.exports = function(grunt) {[m
+ [m
+ 		checktextdomain: {[m
+ 			options:{[m
+[31m-				text_domain: 'wp-grunt-starter-plugin',[m
+[32m+[m				[32mtext_domain: 'pipe-careers',[m
+ 				keywords: [[m
+ 					'__:1,2d',[m
+ 					'_e:1,2d',[m
+[1mdiff --git a/composer.json b/composer.json[m
+[1mindex 071e5d6..4b244b4 100644[m
+[1m--- a/composer.json[m
+[1m+++ b/composer.json[m
+[36m@@ -1,5 +1,5 @@[m
+ {[m
+[31m-    "name": "dkjensen/wp-grunt-starter-plugin",[m
+[32m+[m[32m    "name": "dkjensen/pipe-careers",[m
+     "type": "wordpress-plugin",[m
+     "require": {[m
+         "composer/installers": "1.6.0"[m
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex 9c6c841..46faf0d 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -1,5 +1,5 @@[m
+ {[m
+[31m-  "name": "wp-grunt-starter-plugin",[m
+[32m+[m[32m  "name": "pipe-careers",[m
+   "version": "1.0.0",[m
+   "lockfileVersion": 1,[m
+   "requires": true,[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex c9c6310..7527f24 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -1,5 +1,5 @@[m
+ {[m
+[31m-  "name": "wp-grunt-starter-plugin",[m
+[32m+[m[32m  "name": "pipe-careers",[m
+   "version": "1.0.0",[m
+   "private": true,[m
+   "devDependencies": {[m
+[1mdiff --git a/tests/bootstrap.php b/tests/bootstrap.php[m
+[1mindex f2a2abc..713c22d 100644[m
+[1m--- a/tests/bootstrap.php[m
+[1m+++ b/tests/bootstrap.php[m
+[36m@@ -2,7 +2,7 @@[m
+ /**[m
+  * PHPUnit bootstrap file[m
+  *[m
+[31m- * @package WP Grunt Starter Plugin[m
+[32m+[m[32m * @package Pipe Careers[m
+  */[m
+ [m
+ $_tests_dir = getenv( 'WP_TESTS_DIR' );[m
+[36m@@ -23,7 +23,7 @@[m [mrequire_once $_tests_dir . '/includes/functions.php';[m
+  * Manually load the plugin being tested.[m
+  */[m
+ function _manually_load_plugin() {[m
+[31m-	require dirname( dirname( __FILE__ ) ) . '/wp-grunt-starter-plugin.php';[m
+[32m+[m	[32mrequire dirname( dirname( __FILE__ ) ) . '/pipe-careers.php';[m
+ }[m
+ tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );[m
+ [m

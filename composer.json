@@ -1,5 +1,5 @@
 {
-    "name": "dkjensen/wp-grunt-starter-plugin",
+    "name": "dkjensen/pipe-careers",
     "type": "wordpress-plugin",
     "require": {
         "composer/installers": "1.6.0"
