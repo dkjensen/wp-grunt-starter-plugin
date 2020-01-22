@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Pipe Careers
  * Description: UA local search and mapping features
- * Version: 1.0.10
+ * Version: 1.0.11
  * Author: David Jensen
  * Author URI: https://dkjensen.com
  * Text Domain: pipe-careers
