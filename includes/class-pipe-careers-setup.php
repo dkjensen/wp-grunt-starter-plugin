@@ -183,6 +183,8 @@ class Pipe_Careers_Setup {
             add_rewrite_rule( $state->slug . '/(.+?)/?$', 'index.php?taxonomy=state&term=' . $state->slug . '&landingpage=$matches[1]', 'top' );
         }
 
+        register_taxonomy_for_object_type( 'post_tag', 'help-article' );
+
         register_taxonomy_for_object_type( 'state', 'landingpage' );
         register_taxonomy_for_object_type( 'trade', 'landingpage' );
         register_taxonomy_for_object_type( 'county', 'landingpage' );
